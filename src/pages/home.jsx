@@ -21,18 +21,18 @@ export const Home = () => {
             </div>
         </Reveal>
         <div className="hero-section-container">
-            <Reveal>
+            <Reveal delay={.2}>
             <div className="hero-container">
                 <h1 className='hero'>Bienvenue à l'Hôpital Frantz Fanon</h1>
             </div>
             </Reveal>
               <div className="slogan-container">
-                  <Reveal>
+                  <Reveal delay={.3}>
                       <p className="slogan">
                           Nous sommes dédiés à fournir des soins de santé de qualité et à promouvoir le bien-être de nos patients.
                       </p>
                   </Reveal>
-                      <Reveal>
+                      <Reveal delay={.3}>
                           <Link style={{ textDecoration: "none" }}>
                               <div className="more-button-container">
                                   En Savoir plus
@@ -42,39 +42,45 @@ export const Home = () => {
               </div>
         </div>
         <div className="services-section-container">
-            <Reveal>
                 <div className='services-section-header-container'>
-                    <h1 className='services-section-header'>Services de qualité pour votre bien-être</h1>
-                    <p className='services-section-paragraph'>Nous offrons une gamme complète de services de thérapie et de réhabilitation pour répondre à vos besoins de santé mentale.
-                       Notre équipe expérimentée est là pour vous soutenir et vous aider à retrouver une vie épanouissante.
-                    </p>
+                    <Reveal delay={.3}>
+                        <h1 className='services-section-header'>Services de qualité pour votre bien-être</h1>
+                    </Reveal>
+                    <Reveal delay={.4}>
+                        <p className='services-section-paragraph'>Nous offrons une gamme complète de services de thérapie et de réhabilitation pour répondre à vos besoins de santé mentale.
+                           Notre équipe expérimentée est là pour vous soutenir et vous aider à retrouver une vie épanouissante.
+                        </p>
+                    </Reveal>
                 </div>
-            </Reveal>
-            <Reveal>
                 <div className="service-cards-container">
                 
-                        <div className="service-card-container">
-                            <Users width={72} height={72} color='#1E3E58'/>
-                            <h2 className='service-card-header'>Consultations personnalisées</h2>
-                            <p className="service-description">Rencontrez nos experts en santé mentale pour desconsultations personnalisées et des plans de traitement adaptés à vos besoins individuels.</p>
-                        </div>
+                        <Reveal delay={.1}>
+                            <div className="service-card-container">
+                                <Users width={72} height={72} color='#1E3E58'/>
+                                <h2 className='service-card-header'>Consultations personnalisées</h2>
+                                <p className="service-description">Rencontrez nos experts en santé mentale pour desconsultations personnalisées et des plans de traitement adaptés à vos besoins individuels.</p>
+                            </div>
+                        </Reveal>
                 
                 
-                        <div className="service-card-container">
-                            <BookHeart width={72} height={72} color='#1E3E58'/>
-                            <h2 className='service-card-header'>Thérapies spécialisées</h2>
-                            <p className="service-description">Bénéficiez de thérapies spécialisées, telles que la thérapie individuelle, la thérapie de groupe et lathérapie familiale, pour vous aider à surmonter vosdifficultés.</p>
-                        </div>
+                        <Reveal delay={.2}>
+                            <div className="service-card-container">
+                                <BookHeart width={72} height={72} color='#1E3E58'/>
+                                <h2 className='service-card-header'>Thérapies spécialisées</h2>
+                                <p className="service-description">Bénéficiez de thérapies spécialisées, telles que la thérapie individuelle, la thérapie de groupe et lathérapie familiale, pour vous aider à surmonter vosdifficultés.</p>
+                            </div>
+                        </Reveal>
                 
                 
-                        <div className="service-card-container">
-                            <ClipboardPlus width={72} height={72} color='#1E3E58'/>
-                            <h2 className='service-card-header'>Programmes de réhabilitation</h2>
-                            <p className="service-description">Participez à nos programmes de réhabilitation qui visent à vous aider à retrouver votre indépendance et à améliorer votre qualité de vie</p>
-                        </div>
+                        <Reveal delay={.3}>
+                            <div className="service-card-container">
+                                <ClipboardPlus width={72} height={72} color='#1E3E58'/>
+                                <h2 className='service-card-header'>Programmes de réhabilitation</h2>
+                                <p className="service-description">Participez à nos programmes de réhabilitation qui visent à vous aider à retrouver votre indépendance et à améliorer votre qualité de vie</p>
+                            </div>
+                        </Reveal>
                 
                 </div>
-            </Reveal>
               <Reveal>
                   <Link style={{ textDecoration: "none" }}>
                       <div className="more-button-container more-services-button-container">
@@ -173,7 +179,7 @@ export const Home = () => {
                   </Reveal>
               </div>
               <Reveal>
-                  <Link style={{ textDecoration: "none" }}>
+                  <Link to="/contactez-nous" style={{ textDecoration: "none" }}>
                       <div className="contact-button-container">
                           Contactez Nous
                       </div>

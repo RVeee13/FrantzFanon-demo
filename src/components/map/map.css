@@ -1,0 +1,17 @@
+.leaflet-container{
+    height: 300px; 
+    width: 800px;
+    object-fit: cover;
+}
+
+@media(max-width: 800px) {
+   .leaflet-container{
+    width: 400px;
+   } 
+}
+
+@media(max-width:400px){
+    .leaflet-container{
+        width: 350px;
+    }
+}

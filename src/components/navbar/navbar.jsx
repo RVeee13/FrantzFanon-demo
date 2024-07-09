@@ -20,8 +20,8 @@ export const NavBar = () => {
           <li><NavLink to={"/services"}>Services</NavLink></li>
           <li><NavLink to={"/informations"}>Informations</NavLink></li>
         </ul>
-        <Link style={{ textDecoration: "none" }}>
-          <div className="contact-button-container">
+        <Link to={"/contactez-nous"} style={{ textDecoration: "none" }}>
+          <div className="navbar-contact-button-container">
             Contactez Nous
           </div>
         </Link>

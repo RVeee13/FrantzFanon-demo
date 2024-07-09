@@ -25,8 +25,8 @@
     justify-content: flex-start;
     align-items: center;
     gap: 32px;
-    background-color: #d3dff0ce;
-    position: absolute;
+    background-color: #FFF;
+    position: sticky;
     top:0;
     right: 0;
     left: 0;
@@ -88,20 +88,31 @@ ul{
 .navbar > li > *{
     color: var(--secondary-color);
     text-decoration: none;
-    font-size: 22px;
+    font-size: 16px;
 }
 
 .contact-button-container{
     background-color: var(--buttons-color);
-    width: 213px;
     height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 22px;
 }
+
+.navbar-contact-button-container{
+    background-color: var(--buttons-color);
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
 
 
 .contact-button-container:hover{
