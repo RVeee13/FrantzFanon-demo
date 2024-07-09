@@ -1,0 +1,41 @@
+:root{
+    --primary-font: "Inter";
+    --primary-color:#1E3E58;
+    --secondary-color:#71A4D6;
+    --buttons-color: #3C69AD;
+}
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex: 1;
+    padding: 40px 30px 0 30px;
+    background-color: var(--primary-color);
+    min-height: 200px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+    height: 100%;
+}
+
+.footer-header{
+    font-size: 18px;
+    color: var(--secondary-color)
+}
+
+span{
+    color: white;
+    font-size: 16px
+}

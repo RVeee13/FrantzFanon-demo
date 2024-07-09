@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --primary-font: "Inter";
+    --primary-color:#1E3E58;
+    --secondary-color:#71A4D6;
+    --buttons-color: #3C69AD;
+}
+
+*,
+*::before,
+*::after{
+    font-family: "Inter"; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.primary-container{
+    max-width: 100%;
+    padding: 24px 30px 24px 30px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+    background-color: #d3dff0ce;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.logo{
+    min-width: fit-content;
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size:32px;
+}
+
+.navbar-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 20px;
+}
+
+.navbar >li{
+    position: relative;
+}
+
+.navbar > li > *::before{
+    content: '';
+    display: block;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    width: 0%;
+    position: absolute;
+    bottom: -5px;
+    transition: all 200ms ease-in-out
+}
+
+.navbar > li >*:hover::before{
+    width: 100%;
+}
+
+.active{
+   padding: 10px; 
+   /* background: var(--primary-color); */
+   background-color: white;
+   border-radius: 10px;
+}
+
+.navbar > li > *{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.contact-button-container{
+    background-color: var(--buttons-color);
+    width: 213px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+
+.contact-button-container:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.navbar-toggle{
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 30px;
+}
+
+
+@media (max-width: 990px) {
+    .primary-container{
+        gap: 20px;
+    }
+    .logo{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .navbar{
+        gap: 16px;
+    }
+    .navbar > li > *{
+        font-size: 16px;
+    }
+
+    .contact-button-container{
+        font-size: 16px;
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 777px){
+    .active{
+        padding: 10px; 
+        /* background: var(--primary-color); */
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+     }
+     
+    .logo{
+        padding-top: 10px;
+    }
+    .navbar-toggle{
+        display: inline-block;
+    }
+
+    .primary-container{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .navbar{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-container{
+        display:none;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        gap: 20px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+    }
+
+    .opened{
+        display:flex;
+        min-height: 250px;
+        padding-top: 24px;
+    }
+
+    .navbar> li > *{
+        color: #fff;
+    }
+}

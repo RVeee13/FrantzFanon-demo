@@ -1,0 +1,443 @@
+:root{
+    --primary-font: "Inter";
+    --primary-color:#1E3E58;
+    --secondary-color:#71A4D6;
+    --buttons-color: #3C69AD;
+}
+
+*,
+*::before,
+*::after{
+    font-family: "Inter"; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.home-page-container{
+    margin-top: 120px;
+    position: relative;
+  padding-bottom: 250px;
+}
+
+.image-slider-container{
+    max-width: 100vw;
+    aspect-ratio: 5 / 2;
+    margin: 0 30px; 
+}
+
+.hero-section-container{
+    padding: 24px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+    color: var(--primary-color);
+    font-size: 48px; 
+    letter-spacing: -2;
+}
+
+.slogan-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 16px;
+}
+
+.slogan{
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1;
+}
+
+.more-button-container{
+    margin-top: 10px;
+    background-color: var(--buttons-color);
+    width: 150px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.more-button-container:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.services-section-container{
+    margin-top: 80px;
+    padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+}
+
+.services-section-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.services-section-header{
+    color: var(--primary-color);
+    font-size: 48px; 
+    letter-spacing: -2;
+}
+
+.services-section-paragraph{
+    color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1;
+}
+
+.service-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px; 
+}
+
+.service-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    min-height: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.service-card-header{
+    font-size: 32px;
+    color: var(--primary-color);
+    letter-spacing: -2;
+    margin-bottom: 24px;
+}
+
+.service-description{
+    font-size: 16px;
+    color: var(--secondary-color);
+    letter-spacing: 1;
+    line-height: 32px;
+}
+
+.svg-container{
+    width: 150px;
+    height: 150px;
+}
+
+.svg-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.emergency-section{
+    padding: 0 30px;
+    background: var(--primary-color);
+    width: 100vw;
+    height: 400px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+
+.emergency-section-header{
+    font-size: 40px;
+}
+
+.phone-number-button-container{
+    background-color: var(--buttons-color);
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10px;
+}
+
+.phone-number{
+    color: #fff;
+    font-size: 40px;
+}
+
+.phone-icon{
+    width: 63px;
+    height: 63px;
+}
+
+.faq-section{
+    margin: 80px 30px 0 30px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.faq-section-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.faq-section-header{
+    font-size: 48px;
+    letter-spacing: -2px;
+    color: var(--primary-color);
+}
+
+.faq-section-paragraph{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.question-cards-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 915px;
+}
+
+.question-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.question-container{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.answer{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.secondary-header{
+    font-size: 48px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.contact-button-container{
+    background-color: var(--buttons-color);
+    width: 213px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+
+@media (max-width:1150px) {
+   .hero{
+    font-size: 40px;
+   } 
+   .services-section-header{
+    font-size: 40px;
+   }
+   .faq-section-header{
+    font-size: 40px;
+   }
+   .secondary-header{
+    font-size: 40px;
+   }
+}
+
+@media (max-width:960px) {
+   .hero{
+    font-size: 32px;
+   } 
+   .slogan{
+    font-size: 14px;
+    line-height: 24px;
+   }
+   .more-button-container{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+   }
+   .services-section-header{
+    font-size: 32px;
+   }
+   .services-section-paragraph{
+    font-size: 14px;
+    line-height: 24px;
+   }
+
+   .service-cards-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+   }
+
+   .service-card-container{
+        min-height: 200px;
+   }
+
+   .service-card-header{
+    font-size: 32px;
+   }
+
+   .svg-container{
+    width: 130px;
+    height: 130px;
+   }
+
+   .emergency-section-header{
+    font-size: 32px;
+   }
+   
+   .phone-number{
+    font-size: 32px;
+   }
+
+   .phone-icon{
+    width: 56px;
+    height: 56px;
+   }
+
+   .faq-section-header{
+    font-size: 32px;
+   }
+
+   .secondary-header{
+    font-size: 32px;
+   }
+
+   .contact-button-container{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+   }
+}
+
+
+
+
+@media (max-width:650px) {
+    .hero-section-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+    .hero{
+        font-size: 24px;
+    }
+    .slogan-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .services-section-container{
+        margin-top: 24px;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .services-section-header-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .services-section-header{
+        font-size: 24px;
+    }
+
+    .service-cards-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:32px;
+    }
+
+    .service-card-container{
+        justify-content: center;
+        align-items: center;
+       text-align: center; 
+    }
+
+    .service-card-header{
+        font-size: 20px;
+    }
+
+    .svg-container{
+        width: 100px;
+        height: 100px;
+       }
+    
+      .emergency-section{ 
+        height: 300px;
+       }
+    
+       .emergency-section-header{
+        font-size: 24px;
+       }
+       
+       .phone-number{
+        font-size: 24px;
+       }
+    
+       .phone-icon{
+        width: 32px;
+        height: 32px;
+       }
+       .phone-number-button-container{
+        width: 250px;
+        height: 72px;
+       }
+
+       .faq-section-header{
+        font-size: 24px;
+       }
+
+       .secondary-header{
+        font-size: 24px;
+       }
+
+}
+
+
