@@ -1,16 +1,17 @@
 import React from 'react'
 import "../styles/home.css"
 import { ImageSlider } from '../components/imageSlider/imageSlider'
-import img1 from "../imgs/img2.jpg"
-import img2 from "../imgs/img1.jpg"
+import img2 from "../imgs/img2.jpg"
+import img1 from "../imgs/img1.png"
 import img3 from "../imgs/img3.jpg"
+import img4 from "../imgs/img4.jpg"
 import svg24h from "../imgs/24h.svg"
 import { Link } from 'react-router-dom'
 import { BookHeart, ClipboardPlus, PhoneCall, Users } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
 import { Reveal } from '../utils/reveal'
 
-const Images = [img1, img2, img3]
+const Images = [img1, img2, img3, img4]
 
 export const Home = () => {
   return (

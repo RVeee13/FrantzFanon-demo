@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion, useInView, useAnimation, useIsPresent} from "framer-motion"
+import {motion, useInView, useAnimation} from "framer-motion"
 import { useEffect, useRef } from 'react';
 
 export const Reveal = ({children, delay=0}) => {

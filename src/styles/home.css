@@ -17,7 +17,7 @@
 
 .home-page-container{
     position: relative;
-  padding-bottom: 250px;
+  padding-bottom: 300px;
 }
 
 .image-slider-container{
@@ -279,6 +279,9 @@
 }
 
 @media (max-width:960px) {
+    .home-page-container{
+        padding-bottom: 600px;
+    }
    .hero{
     font-size: 32px;
    } 
