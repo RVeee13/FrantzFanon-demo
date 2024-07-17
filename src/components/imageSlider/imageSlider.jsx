@@ -24,11 +24,11 @@ export const ImageSlider = ({images}) => {
                 <img src={url} key={url} className='image-slider-image' style={{translate: `${-100 * imageIndex}%`}}/>
             ))}
         </div>
-        <button onClick={showPreviousImage} className='image-slider-button' style={{left: 0}}> <ArrowBigLeft width={32} height={32}/> </button>
-        <button onClick={showNextImage} className='image-slider-button' style={{right: 0}}> <ArrowBigRight width={32} height={32}/> </button>
+        <button onClick={showPreviousImage} className='image-slider-button' style={{left: 0}}> <ArrowBigLeft width={24} height={24}/> </button>
+        <button onClick={showNextImage} className='image-slider-button' style={{right: 0}}> <ArrowBigRight width={24} height={24}/> </button>
         <div className="image-slider-dot-buttons">
             {images.map((_, index) =>(
-                <button key={index} className='image-slider-dot-button' onClick={()=> setImageIndex(index)}>{index === imageIndex ? <CircleDot width={24} height={24}/> : <Circle width={24} height={24}/>}</button>
+                <button key={index} className='image-slider-dot-button' onClick={()=> setImageIndex(index)}>{index === imageIndex ? <CircleDot width={16} height={16}/> : <Circle width={16} height={16}/>}</button>
             ))}
         </div> 
     </div>

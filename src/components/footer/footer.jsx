@@ -11,7 +11,7 @@ export const Footer = () => {
         <Reveal>
           <div className='footer-item'>
               <div className="footer-header">Frantz Fanon Psychiatrie</div>
-              <p style={{color: "white"}}>Nous sommes dédiés à fournir des soins de santé de qualité et à promouvoir le bien-être de nos patients.</p>
+              <p style={{color: "white", lineHeight: "24px", letterSpacing: "1px"}}>Nous sommes dédiés à fournir des soins de santé de qualité et à promouvoir le bien-être de nos patients.</p>
               <a href="https://www.facebook.com/Frantz1Fanon/" target='_blank' rel="noopener noreferrer"><img src="../imgs/facebook-icon.svg" alt="" /><FacebookIcon/></a>
           </div>
         </Reveal>
