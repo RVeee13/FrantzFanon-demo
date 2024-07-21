@@ -16,7 +16,7 @@ export const Footer = () => {
           </div>
         </Reveal>
 
-        <Reveal>
+        <Reveal delay={.3}>
           <div className="footer-item">
               <div className="footer-header">Liens Utiles</div>
               <Link to={""} className='footer-usefull-link'>Accueil</Link>
@@ -26,7 +26,7 @@ export const Footer = () => {
           </div>
         </Reveal>
 
-        <Reveal>
+        <Reveal delay={.6}>
           <div className="footer-item">
               <div className="footer-header">Contact</div>
               <div className='footer-icon-container'><a href="tel:+21325209046" target='_blank' rel="noopener noreferrer"><Phone width={24} height={24} color='#fff'/><span className='footer-icon-text'>025 20 90 46</span></a> </div>

@@ -17,7 +17,7 @@
 
 .home-page-container{
     position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 350px;
 }
 
 .image-slider-container{
@@ -144,6 +144,118 @@
     object-fit: cover;
 }
 
+.stats-section{
+    padding: 24px 150px 80px 150px;
+    width: 100vw;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 24px;
+    grid-template-areas:
+        "emergency days lorum" 
+        "emergency days lorum"
+        "emergency patients lorum"
+        "consultaion patients lorum"
+        "consultaion patients lorum"
+        "consultaion patients beds"
+        "consultaion patients beds"
+        "consultaion hospitalisation beds"
+        "consultaion hospitalisation beds"
+}
+
+.stats-section-container{
+    width: 100vw;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.stats-section-header-container{
+    padding: 0 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-section-header{
+    color: var(--primary-color);
+    font-size: 48px; 
+    letter-spacing: -2;
+}
+
+.grid-item{
+    min-height: 100px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-item .overlay{
+      position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.grid-item-image{
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+
+.stat-card-header{
+    position: absolute;
+    bottom: 16px;
+    text-align: center;
+}
+
+.stat-card-number{
+    color: #C1CBD9;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+
+.stat-card-text{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.emergency-card{
+    grid-area: emergency;
+}
+
+.staying-days-card{
+    grid-area: days;
+}
+
+.lorem-ipsum-card{
+    grid-area: lorum;
+}
+
+.consultaion-card{
+    grid-area: consultaion;
+}
+
+.accepted-patients-card{
+    grid-area: patients;
+    height: 300px;
+}
+
+.hospitalisation-days-card{
+    grid-area: hospitalisation;
+}
+
+.beds-card{
+    grid-area: beds;
+}
+
 .emergency-section{
     padding: 0 30px;
     background: var(--primary-color);
@@ -216,7 +328,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 915px;
+    gap: 24px;
 }
 
 .question-card-container{
@@ -225,7 +337,8 @@
     justify-content: center;
     align-items: start;
     gap: 16px;
-    width: 100%;
+    min-width: 70vw;
+    max-width: 70vw ;
     min-height: 150px;
     padding: 10px;
     border: 1px solid var(--primary-color);
@@ -239,6 +352,8 @@
 
 .answer{
     font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 24px;
     color: var(--secondary-color);
 }
 
@@ -276,11 +391,20 @@
    .secondary-header{
     font-size: 40px;
    }
+
+   .stats-section{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+   .stats-section-header{
+    font-size: 40px;
+   }
 }
 
 @media (max-width:960px) {
     .home-page-container{
-        padding-bottom: 600px;
+        padding-bottom: 650px;
     }
    .hero{
     font-size: 32px;
@@ -348,6 +472,43 @@
     height: 40px;
     font-size: 14px;
    }
+
+   .stats-section-header{
+    font-size: 32px;
+   }
+
+   .stat-card-number{
+    font-size: 24px;
+   }
+
+   .stat-card-text{
+    font-size: 16px;
+    font-weight: normal;
+   }
+}
+
+@media (max-width: 700px) {
+    .stats-section{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "emergency days" 
+            "emergency days"
+            "patients patients"
+            "consultaion beds "
+            "hospitalisation lorum"
+            /* "consultaion patients "
+            "consultaion patients beds"
+            "consultaion patients beds"
+            "consultaion hospitalisation beds"
+            "consultaion hospitalisation beds" */;
+        gap: 16px;
+
+    }
+
+    .accepted-patients-card{
+        height: 200px;
+    }
+
 }
 
 
@@ -437,6 +598,10 @@
        }
 
        .secondary-header{
+        font-size: 24px;
+       }
+
+       .stats-section-header{
         font-size: 24px;
        }
 
