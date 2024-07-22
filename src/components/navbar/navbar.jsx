@@ -9,7 +9,7 @@ export const NavBar = () => {
   const [menuOpened, setMenuOpened] = useState(false)
   return (
     <div className="primary-container">
-      <div className="logo">Frantz Fanon</div>
+      <div className="logo">EHS Frantz Fanon</div>
       <div className="navbar-toggle" onClick={()=>setMenuOpened(!menuOpened)}>
         <Menu height={48} width={48} color='#1E3E58' />
       </div>

@@ -12,7 +12,7 @@ import patient1Img from "../imgs/stats-images/patient.jpg"
 import patient2Img from "../imgs/stats-images/patient2.jpg"
 import medicalRecordImg from "../imgs/stats-images/medical-records.jpg"
 import doctorImg from "../imgs/stats-images/doctor.jpg"
-import svg24h from "../imgs/24h.svg"
+import svg24h from "../imgs/24-7.svg"
 import { Link } from 'react-router-dom'
 import { BookHeart, ClipboardPlus, PhoneCall, Users } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
@@ -56,7 +56,6 @@ export const Home = () => {
                     </Reveal>
                     <Reveal delay={.4}>
                         <p className='services-section-paragraph'>Nous offrons une gamme complète de services de thérapie et de réhabilitation pour répondre à vos besoins de santé mentale.
-                           Notre équipe expérimentée est là pour vous soutenir et vous aider à retrouver une vie épanouissante.
                         </p>
                     </Reveal>
                 </div>
