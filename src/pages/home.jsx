@@ -17,30 +17,31 @@ import { Link } from 'react-router-dom'
 import { BookHeart, ClipboardPlus, PhoneCall, Users } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
 import { Reveal } from '../utils/reveal'
+import { Reveal2 } from '../utils/reveal2'
 
 const Images = [img1, img2, img3, img4]
 
 export const Home = () => {
   return (
     <div className='home-page-container'>
-        <Reveal>
+        <Reveal2>
             <div className='image-slider-container'>
                 <ImageSlider images={Images} />
             </div>
-        </Reveal>
+        </Reveal2>
         <div className="hero-section-container">
-            <Reveal delay={.2}>
+            <Reveal2 delay={.3}>
             <div className="hero-container">
                 <h1 className='hero'>Bienvenue à l’EHS Frantz Fanon</h1>
             </div>
-            </Reveal>
+            </Reveal2>
               <div className="slogan-container">
-                  <Reveal delay={.3}>
+                  <Reveal2 delay={.4}>
                       <p className="slogan">
                           Nous sommes dédiés à fournir des soins de santé de qualité et à promouvoir le bien-être de nos patients.
                       </p>
-                  </Reveal>
-                      <Reveal delay={.3}>
+                  </Reveal2>
+                      <Reveal delay={.1}>
                           <Link style={{ textDecoration: "none" }}>
                               <div className="more-button-container">
                                   En Savoir plus
@@ -51,17 +52,17 @@ export const Home = () => {
         </div>
         <div className="services-section-container">
                 <div className='services-section-header-container'>
-                    <Reveal delay={.3}>
+                    <Reveal2 delay={.3}>
                         <h1 className='services-section-header'>Services de qualité pour votre bien-être</h1>
-                    </Reveal>
-                    <Reveal delay={.4}>
+                    </Reveal2>
+                    <Reveal2 delay={.4}>
                         <p className='services-section-paragraph'>Nous offrons une gamme complète de services de thérapie et de réhabilitation pour répondre à vos besoins de santé mentale.
                         </p>
-                    </Reveal>
+                    </Reveal2>
                 </div>
                 <div className="service-cards-container">
                 
-                        <Reveal delay={.1}>
+                        <Reveal>
                             <div className="service-card-container">
                                 <Users width={72} height={72} color='#1E3E58'/>
                                 <h2 className='service-card-header'>Consultations personnalisées</h2>
@@ -70,7 +71,7 @@ export const Home = () => {
                         </Reveal>
                 
                 
-                        <Reveal delay={.3}>
+                        <Reveal>
                             <div className="service-card-container">
                                 <BookHeart width={72} height={72} color='#1E3E58'/>
                                 <h2 className='service-card-header'>Thérapies spécialisées</h2>
@@ -79,7 +80,7 @@ export const Home = () => {
                         </Reveal>
                 
                 
-                        <Reveal delay={.5}>
+                        <Reveal>
                             <div className="service-card-container">
                                 <ClipboardPlus width={72} height={72} color='#1E3E58'/>
                                 <h2 className='service-card-header'>Programmes de réhabilitation</h2>
@@ -88,105 +89,105 @@ export const Home = () => {
                         </Reveal>
                 
                 </div>
-              <Reveal delay={.6}>
+              {/* <Reveal delay={.3}> */}
                   <Link style={{ textDecoration: "none" }}>
                       <div className="more-button-container more-services-button-container">
                           En Savoir plus
                       </div>
                   </Link>
-              </Reveal>
+              {/* </Reveal> */}
         </div>
           <div className="stats-section-container">
                 <div className='stats-section-header-container'>
-                    <Reveal delay={.3}>
+                    <Reveal2>
                         <h1 className='stats-section-header'>Statistiques Clés du Département de Psychiatrie (2019 - Présent)</h1>
-                    </Reveal>
+                    </Reveal2>
                 </div>
               <div className="stats-section">
                   <div className="grid-item emergency-card">
                       <img src={urgenceImg} alt="Emergency sign" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+40,382</div>
                               <div className="stat-card-text">Consultations d'urgence</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item staying-days-card">
                       <img src={patient1Img} alt="patient image" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+114.67</div>
                               <div className="stat-card-text">Séjour Moyen</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item lorem-ipsum-card">
                       <img src={patient2Img} alt="Patient" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">60.98%</div>
                               <div className="stat-card-text">Taux d'occupation</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item consultaion-card">
                       <img src={doctorImg} alt="Doctor" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+132,165</div>
                               <div className="stat-card-text">Consultation Spécialisé</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item accepted-patients-card">
                       <img src={medicalRecordImg} alt="medical clip board" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+7,132</div>
                               <div className="stat-card-text">Malades Admis</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item hospitalisation-days-card">
                       <img src={calendarImg} alt="Calendar" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+1,240,112</div>
                               <div className="stat-card-text">Journée de Hospitalisation</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
                   <div className="grid-item beds-card">
                       <img src={hospitalRoomImg} alt="" className='grid-item-image' />
                       <div className="overlay"></div>
                       <div className="stat-card-header">
-                          <Reveal>
+                          <Reveal2 delay={.2}>
                               <div className="stat-card-number">+764</div>
                               <div className="stat-card-text">Lits Organisé</div>
-                          </Reveal>
+                          </Reveal2>
                       </div>
                   </div>
               </div></div>
 
         <div className='emergency-section'>
-            <Reveal>
+            <Reveal2>
                 <div className="svg-container">
                     <img src={svg24h} alt="24h" className='svg-image' />
                 </div>
-            </Reveal>
-            <Reveal delay={.3}>
+            </Reveal2>
+            <Reveal2 delay={.3}>
                 <div className='emergency-section-header-container'>
                     <h2 className='emergency-section-header'>Besoin d'aide en urgence ?</h2>
                 </div>
-            </Reveal>
-                  <Reveal delay={.5}>
+            </Reveal2>
+                  <Reveal delay={.2}>
                       <div className="phone-number-button-container">
                         <div className='phone-icon-container'>
                          <PhoneCall color='#fff' className='phone-icon'/>
@@ -200,12 +201,12 @@ export const Home = () => {
 
         <div className="faq-section">
             <div className="faq-section-header-container">
-                <Reveal>
+                <Reveal2>
                     <h1 className="faq-section-header">FAQs</h1>
-                </Reveal>
-                <Reveal>
+                </Reveal2>
+                <Reveal2 delay={.2}>
                     <p className="faq-section-paragraph">Trouvez des reponses aux questions frequemment posees sur les services et les traitements de l’hopital </p>
-                </Reveal>
+                </Reveal2>
             </div>
             <div className="question-cards-container">
                 <Reveal>
@@ -251,11 +252,11 @@ export const Home = () => {
             </div>
 
               <div className="faq-section-secondary-header-container">
-                  <Reveal>
+                  <Reveal2>
                       <div className="secondary-header">
                           Vous avez encore des questions ?
                       </div>
-                  </Reveal>
+                  </Reveal2>
               </div>
               <Reveal>
                   <Link to="/contactez-nous" style={{ textDecoration: "none" }}>
