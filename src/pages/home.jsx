@@ -31,7 +31,7 @@ export const Home = () => {
         <div className="hero-section-container">
             <Reveal delay={.2}>
             <div className="hero-container">
-                <h1 className='hero'>Bienvenue à l’ESH Frantz Fanon</h1>
+                <h1 className='hero'>Bienvenue à l’EHS Frantz Fanon</h1>
             </div>
             </Reveal>
               <div className="slogan-container">

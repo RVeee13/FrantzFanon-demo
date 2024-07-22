@@ -42,7 +42,7 @@ export const ContactUs = () => {
                              Email
                           </div>
                           <div className="contact-information">
-                              chublida8@gmail.com
+                              ehsfrantzfanon@yahoo.fr
                           </div>
                       </div>
                   </Reveal>

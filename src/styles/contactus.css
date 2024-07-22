@@ -1,6 +1,7 @@
 :root{
     --primary-font: "Inter";
     --primary-color:#1E3E58;
+    /* --primary-color: #255ec9; */
     --secondary-color:#71A4D6;
     --buttons-color: #3C69AD;
 }
