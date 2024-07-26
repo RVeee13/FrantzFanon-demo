@@ -23,7 +23,6 @@ export const Footer = () => {
               <Link to={""} className='footer-usefull-link'>Accueil</Link>
               <Link to={""} className='footer-usefull-link'>A propos</Link>
               <Link to={""} className='footer-usefull-link'>Services</Link>
-              <Link to={""} className='footer-usefull-link'>Informations</Link>
           </div>
         </Reveal2>
 

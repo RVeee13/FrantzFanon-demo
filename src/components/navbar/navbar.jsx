@@ -18,7 +18,6 @@ export const NavBar = () => {
           <li><NavLink to={"/"}>Accueil</NavLink></li>
           <li><NavLink to={"/a-propos"}>A propos</NavLink></li>
           <li><NavLink to={"/services"}>Services</NavLink></li>
-          <li><NavLink to={"/informations"}>Informations</NavLink></li>
         </ul>
         <Link to={"/contactez-nous"} style={{ textDecoration: "none" }}>
           <div className="navbar-contact-button-container">
