@@ -32,17 +32,6 @@ export const Home = () => {
         };
     
         window.addEventListener('load', handleLoad);
-    
-        // Fallback to set loading false after a timeout in case 'load' event doesn't fire
-        const timeoutId = setTimeout(() => {
-          setLoading(false);
-        }, 5000); // Adjust timeout as necessary
-    
-        // Cleanup the event listener and timeout on component unmount
-        return () => {
-          window.removeEventListener('load', handleLoad);
-          clearTimeout(timeoutId);
-        };
       }, []);
   return (
 
