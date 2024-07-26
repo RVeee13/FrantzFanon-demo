@@ -18,7 +18,7 @@
 
 .home-page-container{
     position: relative;
-  padding-bottom: 350px;
+  padding-bottom: 321px;
 }
 
 .image-slider-container{
@@ -40,7 +40,7 @@
     /* color: var(--primary-color); */
     color: white;
     font-size: 48px; 
-    letter-spacing: -2;
+    letter-spacing: -1px;
 }
 
 .slogan-container{
@@ -78,8 +78,8 @@
 }
 
 .services-section-container{
-    margin-top: 40px;
-    padding: 24px 30px;
+    margin-top: 64px;
+    padding: 0px 30px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -156,7 +156,7 @@
 }
 
 .stats-section{
-    padding: 24px 150px 80px 150px;
+    padding: 24px 150px 64px 150px;
     width: 100vw;
     height: 800px;
     display: grid;
@@ -175,8 +175,8 @@
 }
 
 .stats-section-container{
+    margin-top: 64px;
     width: 100vw;
-    padding-top: 30px;
     text-align: center;
 }
 
@@ -306,7 +306,7 @@
 }
 
 .faq-section{
-    margin: 80px 30px 0 30px;
+    margin:  64px 30px 0 30px;
     display: flex ;
     flex-direction: column;
     justify-content: center;
@@ -415,7 +415,7 @@
 
 @media (max-width:960px) {
     .home-page-container{
-        padding-bottom: 650px;
+        padding-bottom: 663px;
     }
    .hero{
     font-size: 32px;
@@ -499,6 +499,9 @@
 }
 
 @media (max-width: 700px) {
+    .hero-section-container{
+        margin-top: 24px;
+    }
     .stats-section{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -519,6 +522,23 @@
     .accepted-patients-card{
         height: 200px;
     }
+    
+    .stats-section-container{
+        margin-top: 24px;
+    }
+
+    .faq-section{
+        margin-top: 24px;
+    }
+
+    .stats-section{
+        padding-bottom:24px;
+    }
+
+    .faq-section-header-container{
+        gap: 8px;
+    }
+
 
 }
 
@@ -553,7 +573,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 8px;
         text-align: center;
     }
 
@@ -616,6 +636,7 @@
         font-size: 24px;
        }
 
+       
 }
 
 

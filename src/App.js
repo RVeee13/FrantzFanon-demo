@@ -6,6 +6,8 @@ import { Home } from './pages/home';
 import {motion, useInView, useAnimation, useIsPresent} from "framer-motion"
 import { useEffect, useRef } from 'react';
 import { ContactUs } from './pages/contactus';
+import { AboutUs } from './pages/aboutus';
+import { Footer } from './components/footer/footer';
 
 function App() {
   const ref = useRef(null)
@@ -25,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contactez-nous" element={<ContactUs />} />
+          <Route path="/a-propos" element={<AboutUs />} />
         </Routes>
     </>
   );

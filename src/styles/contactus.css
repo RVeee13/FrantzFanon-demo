@@ -18,9 +18,9 @@
 
 .contact-page-container {
     width: 100vw;
-    margin-top: 50px;
+    margin-top: 32px;
     position: relative;
-    padding: 0 30px 300px 30px;
+    padding: 0 30px 321px 30px;
 }
 
 .contact-page-header-container{
@@ -44,57 +44,74 @@
     text-align: center;
 }
 
-.contact-cards-container{
-    margin-top: 80px;
-    width: 100%;
+.contact-us-section-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+.contact-cards-container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
     justify-content: center ;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
 }
 
 .contact-card-container{
-    padding: 16px;
-    min-height: 300px;
     width: 300px;
+    padding: 16px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 8px;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
+    text-decoration: none;
+}
+
+.contact-card-container:hover{
+    cursor: pointer;
+}
+
+.contact-informations-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 
 .contact-card-title{
     color: var(--primary-color);
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     text-align: center;
 }
 
 .contact-information{
     color: var(--secondary-color);
-    font-size: 24px;
+    font-size: 16px;
 }
 
 
 .contact-page-map-container{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    gap: 32px;
+    margin-top: 40px;
+    gap: 24px;
 }
 
 .coordinates-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
 }
 
 .address-container{
@@ -141,19 +158,22 @@
 
 @media (max-width: 960px) {
     .contact-page-container{
-        padding-bottom: 600px;
+        padding-bottom: 663px;
     }
     
 }
 
-@media (max-width: 777px) {
+@media (max-width: 840px){
+    .contact-us-section-container{
+        flex-direction: column;
+        gap: 32px;
+    }
+
     .contact-cards-container{
-        margin-top: 40px;
         gap: 24px;
     }
-    .contact-card-container{
-        width: 250px;
-        min-height: 250px;
+    .contact-page-map-container{
+        margin-top: 0;
     }
 }
 
@@ -164,11 +184,6 @@
 
     .contact-page-paragraph{
         font-size: 16px
-    }
-
-    .contact-card-container{
-        width: 200px;
-        min-height: 200px;
     }
 
     .contact-card-title{

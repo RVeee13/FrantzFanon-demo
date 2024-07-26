@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+body{
+    padding-top: 96px;
+}
+
 
 .primary-container{
     max-width: 100%;
@@ -27,7 +31,7 @@
     align-items: center;
     gap: 32px;
     background-color: #FFF;
-    position: sticky;
+    position: fixed;
     top:0;
     right: 0;
     left: 0;
@@ -82,10 +86,10 @@ ul{
 
 .active{
    padding: 10px; 
-   /* background: var(--primary-color); */
-   background-color: white;
+   background: rgb(215, 224, 255); 
    border-radius: 10px;
-}
+}  
+
 
 .navbar > li > *{
     color: var(--secondary-color);
@@ -154,6 +158,9 @@ ul{
 
 
 @media (max-width: 777px){
+    body {
+        padding-top: 87px;
+    }
     .active{
         padding: 10px; 
         /* background: var(--primary-color); */

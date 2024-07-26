@@ -16,7 +16,7 @@ export const NavBar = () => {
       <div className={menuOpened ? "navbar-container opened" : "navbar-container"}>
         <ul className="navbar">
           <li><NavLink to={"/"}>Accueil</NavLink></li>
-          <li><NavLink to={"/about"}>A propos</NavLink></li>
+          <li><NavLink to={"/a-propos"}>A propos</NavLink></li>
           <li><NavLink to={"/services"}>Services</NavLink></li>
           <li><NavLink to={"/informations"}>Informations</NavLink></li>
         </ul>
