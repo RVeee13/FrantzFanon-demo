@@ -62,14 +62,16 @@ export const ContactUs = () => {
                               <div className='address'>Hôpital Frantz Fanon, Zabana Blida</div>
                           </div>
                       </Reveal>
-                      <Reveal href="https://www.google.com/maps/dir//''/@36.4835656,2.7554726,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x128f0ca26ac33231:0xf1641e29ac04e262!2m2!1d2.7967579!2d36.4835037!3e0?entry=ttu" target="_blank" style={{ textDecoration: 'none' }}>
-                              <div className='direction-button-container'>
-                                  J'y Vais
-                                  <div className='direction-button-icon-container'>
-                                      <MapIcon width={32} height={32} color='#FFF' />
+                      <Reveal>
+                          <a href="https://www.google.com/maps/dir//''/@36.4835656,2.7554726,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x128f0ca26ac33231:0xf1641e29ac04e262!2m2!1d2.7967579!2d36.4835037!3e0?entry=ttu" target="_blank" style={{ textDecoration: 'none' }}>
+                                  <div className='direction-button-container'>
+                                      J'y Vais
+                                      <div className='direction-button-icon-container'>
+                                          <MapIcon width={32} height={32} color='#FFF' />
+                                      </div>
                                   </div>
-                              </div>
-                          </Reveal>
+                              </a>
+                      </Reveal>
                   </div>
               </div>
           </div>
