@@ -499,9 +499,9 @@
 }
 
 @media (max-width: 700px) {
-    .hero-section-container{
+    /* .hero-section-container{
         margin-top: 24px;
-    }
+    } */
     .stats-section{
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
