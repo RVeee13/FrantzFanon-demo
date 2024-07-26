@@ -16,7 +16,6 @@ export const AboutUs= () => {
         window.scrollTo(0,0)
     },[])
 
-    const [loading, setLoading] = useState(true);
 
   
     const [toggledMission, setToggeledMission] = useState(0)

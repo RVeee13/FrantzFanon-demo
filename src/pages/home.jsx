@@ -26,19 +26,24 @@ export const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-      const handleLoad = () => {
-        setLoading(false);
-      };
-  
-      // Add event listener for when the page is fully loaded
-      window.addEventListener('load', handleLoad);
-  
-      // Cleanup the event listener on component unmount
-      return () => {
-        window.removeEventListener('load', handleLoad);
-      };
+        // Add event listener for when the page is fully loaded
+        const handleLoad = () => {
+          setLoading(false);
+        };
     
-    }, []);
+        window.addEventListener('load', handleLoad);
+    
+        // Fallback to set loading false after a timeout in case 'load' event doesn't fire
+        const timeoutId = setTimeout(() => {
+          setLoading(false);
+        }, 5000); // Adjust timeout as necessary
+    
+        // Cleanup the event listener and timeout on component unmount
+        return () => {
+          window.removeEventListener('load', handleLoad);
+          clearTimeout(timeoutId);
+        };
+      }, []);
   return (
 
     <div className='home-page-container'>
