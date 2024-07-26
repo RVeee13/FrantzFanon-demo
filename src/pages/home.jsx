@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../styles/home.css"
 import { ImageSlider } from '../components/imageSlider/imageSlider'
 import img2 from "../imgs/img2.jpg"
@@ -18,12 +18,31 @@ import { BookHeart, ClipboardPlus, PhoneCall, Users } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
 import { Reveal } from '../utils/reveal'
 import { Reveal2 } from '../utils/reveal2'
+import Loader from '../components/Loader'
 
-const Images = [img1, img2, img3, img4]
 
 export const Home = () => {
+    const Images = [img1, img2, img3, img4]
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      const handleLoad = () => {
+        setLoading(false);
+      };
+  
+      // Add event listener for when the page is fully loaded
+      window.addEventListener('load', handleLoad);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('load', handleLoad);
+      };
+    
+    }, []);
   return (
+
     <div className='home-page-container'>
+     {loading && <Loader />}
         <Reveal2>
             <div className='image-slider-container'>
                 <ImageSlider images={Images} />

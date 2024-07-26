@@ -16,6 +16,23 @@
     box-sizing: border-box;
 }
 
+
+.loader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.loader-display-none{
+    display: none;
+}
+
 .home-page-container{
     position: relative;
   padding-bottom: 321px;

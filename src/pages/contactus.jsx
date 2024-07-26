@@ -1,17 +1,38 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Reveal } from '../utils/reveal'
 import "../styles/contactus.css"
 import { Map } from '../components/map/map'
 import { MailCheck, MapIcon, MapPin, PhoneCall } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
 import { Reveal2 } from '../utils/reveal2'
+import Loader from '../components/Loader'
 
 export const ContactUs = () => {
     useEffect(()=>{
         window.scrollTo(0,0)
     },[])
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      const handleLoad = () => {
+        setLoading(false);
+      };
+  
+      // Add event listener for when the page is fully loaded
+      window.addEventListener('load', handleLoad);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('load', handleLoad);
+      };
+    
+    }, []);
+
+
   return (
       <div className='contact-page-container'>
+     {loading && <Loader />}
           <div className="contact-page-header-container">
               <Reveal2>
                   <h1 className='contact-page-header'>Contactez-Nous</h1>

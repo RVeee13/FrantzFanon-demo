@@ -8,12 +8,30 @@ import inclusionImg from "../imgs/aboutus-images/inclusion.jpg"
 import respectImg from "../imgs/aboutus-images/respect.jpg"
 import { Reveal2 } from '../utils/reveal2'
 import { Reveal } from '../utils/reveal'
+import Loader from '../components/Loader'
 
 
 export const AboutUs= () => {
     useEffect(()=>{
         window.scrollTo(0,0)
     },[])
+
+    const [loading, setLoading] = useState(true);
+    
+    useEffect(() => {
+      const handleLoad = () => {
+        setLoading(false);
+      };
+  
+      // Add event listener for when the page is fully loaded
+      window.addEventListener('load', handleLoad);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('load', handleLoad);
+      };
+    
+    }, []);
 
     const [toggledMission, setToggeledMission] = useState(0)
     const valuesCards = [{header: "Leadership & Intégrité", img: leadershipImg},
@@ -24,6 +42,7 @@ export const AboutUs= () => {
 
     return(
         <div className='about-us-page-container'>
+     {loading && <Loader />}
             <div className="about-us-hero-section-container">
                 <div className="about-us-hero-section-content-container">
                     <Reveal2>
