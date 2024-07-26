@@ -24,10 +24,9 @@ import Loader from '../components/Loader'
 export const Home = () => {
     const Images = [img1, img2, img3, img4]
     const [loading, setLoading] = useState(true);
+    console.log(loading)
 
-    window.onload = function (){
-        setLoading(false)
-    }
+    window.addEventListener('load', ()=>{setLoading(false); console.log(loading)})
 
   return (
 
