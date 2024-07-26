@@ -8,16 +8,12 @@ import inclusionImg from "../imgs/aboutus-images/inclusion.jpg"
 import respectImg from "../imgs/aboutus-images/respect.jpg"
 import { Reveal2 } from '../utils/reveal2'
 import { Reveal } from '../utils/reveal'
-import Loader from '../components/Loader'
 
 
 export const AboutUs= () => {
     useEffect(()=>{
         window.scrollTo(0,0)
     },[])
-
-
-  
     const [toggledMission, setToggeledMission] = useState(0)
     const valuesCards = [{header: "Leadership & Intégrité", img: leadershipImg},
                          {header: "Excellence & Découverte", img: excellenceImg},

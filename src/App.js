@@ -5,12 +5,8 @@ import { Home } from './pages/home';
 import { useEffect, useState } from 'react';
 import { ContactUs } from './pages/contactus';
 import { AboutUs } from './pages/aboutus';
-import Loader from './components/Loader';
 
 function App() {
-   
-
-
   return (
     <>
       <NavBar />

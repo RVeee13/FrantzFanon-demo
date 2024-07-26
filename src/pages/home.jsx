@@ -25,14 +25,10 @@ export const Home = () => {
     const Images = [img1, img2, img3, img4]
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        // Add event listener for when the page is fully loaded
-        const handleLoad = () => {
-          setLoading(false);
-        };
-    
-        window.addEventListener('load', handleLoad);
-      }, []);
+    window.onload = function (){
+        setLoading(false)
+    }
+
   return (
 
     <div className='home-page-container'>

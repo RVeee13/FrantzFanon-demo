@@ -5,7 +5,6 @@ import { Map } from '../components/map/map'
 import { MailCheck, MapIcon, MapPin, PhoneCall } from 'lucide-react'
 import { Footer } from '../components/footer/footer'
 import { Reveal2 } from '../utils/reveal2'
-import Loader from '../components/Loader'
 
 export const ContactUs = () => {
     useEffect(()=>{
