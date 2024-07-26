@@ -93,8 +93,8 @@ export const AboutUs= () => {
                     </div>
                 </Reveal2>
                 <div className="about-us-values-section-cards-container">
-                    {valuesCards.map((card) => (
-                        <div className="about-us-values-section-card">
+                    {valuesCards.map((card, index) => (
+                        <div className="about-us-values-section-card" key={index}>
                             <div className="about-us-values-section-image-container">
                             <div class="about-us-values-section-card-overlay"></div>
                                 <img src={card.img} className='about-us-values-section-image'/>

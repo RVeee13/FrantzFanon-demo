@@ -26,7 +26,7 @@ export const Home = () => {
     const [loading, setLoading] = useState(true);
     console.log(loading)
 
-    window.addEventListener('load', ()=>{setLoading(false); console.log(loading)})
+    window.addEventListener('load', ()=>{setLoading(false)})
 
   return (
 
