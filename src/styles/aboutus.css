@@ -147,9 +147,9 @@
 
 .about-us-values-section-cards-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    gap: 20px;  
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -168,7 +168,7 @@
 }
 
 .about-us-values-section-image{
-    width: 350px;
+    min-width: 350px;
     height: 160px;
     object-fit: cover;
 }
