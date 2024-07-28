@@ -89,6 +89,11 @@
     color: var(--primary-color);
     font-size: 40px;
     text-align: left;
+    transition: all 100ms ease-in-out;
+}
+
+.services-page-service-header:hover{
+    opacity: .9;
 }
 
 
@@ -225,7 +230,7 @@
     .services-page-service-header{
         font-size: 24px;
     }
-
+    
     .services-page-service-chiefe,
     .services-page-units-header{
         font-size: 16px;

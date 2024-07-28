@@ -27,7 +27,7 @@ export const ContactUs = () => {
                   <Reveal delay={0.1}>
                       <a href='tel:+21325209046' className="contact-card-container">
                           <div className="contact-card-icon-container">
-                              <div className="card-icon"><PhoneCall width={56} height={56} color='#1E3E58' /></div>
+                              <div className="card-icon"><PhoneCall width={56} height={56}  /></div>
                           </div>
                           <div className="contact-informations-container">
                               <div className="contact-card-title">
@@ -42,7 +42,7 @@ export const ContactUs = () => {
                   <Reveal delay={0.2}>
                       <a href='mailto:ehsfrantzfanon@yahoo.fr' className="contact-card-container">
                           <div className="contact-card-icon-container">
-                              <div className="card-icon"><MailCheck width={56} height={56} color='#1E3E58' /></div>
+                              <div className="card-icon"><MailCheck width={56} height={56} /></div>
                           </div>
                           <div className="contact-informations-container">
                               <div className="contact-card-title">

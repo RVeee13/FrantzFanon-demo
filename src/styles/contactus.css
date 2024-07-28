@@ -62,7 +62,8 @@
 
 .contact-card-container{
     width: 300px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,6 +71,22 @@
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     text-decoration: none;
+    transition: all 100ms ease-in-out
+}
+
+.contact-card-container:hover{
+    background: var(--primary-color);
+}
+
+.card-icon{
+    color: var(--primary-color);
+}
+
+.contact-card-container:hover .contact-card-title,
+.contact-card-container:hover .contact-information,
+.contact-card-container:hover .card-icon
+{
+    color: white;
 }
 
 .contact-card-container:hover{
@@ -184,6 +201,12 @@
 
     .contact-page-paragraph{
         font-size: 16px
+    }
+
+    .contact-card-container{
+        padding: 16px;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .contact-card-title{

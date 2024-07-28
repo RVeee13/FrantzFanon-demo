@@ -310,6 +310,7 @@
     align-items: center;
     gap: 16px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
 .phone-number{
@@ -369,6 +370,8 @@
     max-width: 70vw ;
     min-height: 150px;
     padding: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
     border: 1px solid var(--primary-color);
 }
 
@@ -419,6 +422,16 @@
    .secondary-header{
     font-size: 40px;
    }
+   .service-card-container{
+    gap: 0;
+   }
+   .service-card-header{
+    font-size: 24px;
+   }
+
+   .service-description{
+    line-height: 24px;
+   }
 
    .stats-section{
     padding-left: 30px;
@@ -430,7 +443,7 @@
    }
 }
 
-@media (max-width:960px) {
+@media (max-width:990px) {
     .home-page-container{
         padding-bottom: 663px;
     }
@@ -639,6 +652,7 @@
        .phone-number-button-container{
         width: 250px;
         height: 72px;
+        text-decoration: none;
        }
 
        .faq-section-header{

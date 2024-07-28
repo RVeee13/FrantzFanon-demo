@@ -1,7 +1,9 @@
+
 .about-us-page-container{
   width: 100vw;
   position: relative;
   padding-bottom: 321px;
+  overflow-x: hidden;
 }
 
 .about-us-hero-section-container{
@@ -324,6 +326,10 @@
 
     .about-us-values-section-image{
         width: 300px;
+    }
+
+    .about-us-values-section-image{
+        min-width: 300px;
     }
 }
 

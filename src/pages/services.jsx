@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import servicesHeroImg from "../imgs/services-images/services-hero.jpg"
 import "../styles/services.css"
-
 import { Footer } from '../components/footer/footer'
 import { ChevronRight, SquareActivity, UserRound } from 'lucide-react'
 import { Reveal2 } from '../utils/reveal2'
@@ -15,11 +14,11 @@ export const Services = () => {
             "head": "Professeur Bourbon Nadir",
             "units": [
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes",
                     "beds": 30
                 },
                 {
-                    "name": "Unité de Récupération des Femmes",
+                    "name": "Récupération des Femmes",
                     "beds": 10
                 },
                 {
@@ -33,7 +32,7 @@ export const Services = () => {
             "head": "Professeur Mitahri Nassima",
             "units": [
                 {
-                    "name": "Unité d'Urgence et de Dépistage",
+                    "name": "Urgence et de Dépistage",
                     "beds": null
                 },
                 {
@@ -47,11 +46,11 @@ export const Services = () => {
             "head": "Professeur Azzeddine Ratiba",
             "units": [
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération des Femmes",
+                    "name": "Récupération des Femmes",
                     "beds": null
                 },
                 {
@@ -65,11 +64,11 @@ export const Services = () => {
             "head": "Professeur Gasti Ghania",
             "units": [
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération des Femmes",
+                    "name": "Récupération des Femmes",
                     "beds": null
                 },
                 {
@@ -83,11 +82,11 @@ export const Services = () => {
             "head": "Professeur Bessedik Khedidja",
             "units": [
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération des Femmes",
+                    "name": "Récupération des Femmes",
                     "beds": null
                 },
                 {
@@ -101,11 +100,11 @@ export const Services = () => {
             "head": "Professeur Ben Messaoud Dalila",
             "units": [
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération des Femmes",
+                    "name": "Récupération des Femmes",
                     "beds": null
                 },
                 {
@@ -113,7 +112,7 @@ export const Services = () => {
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération des Hommes",
+                    "name": "Récupération des Hommes 2",
                     "beds": null
                 },
                 {
@@ -127,15 +126,15 @@ export const Services = () => {
             "head": "Professeur Ben Cherif Mohamed",
             "units": [
                 {
-                    "name": "Unité de Récupération Administrative des Hommes",
+                    "name": "Unité  Administrative des Hommes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Récupération Administrative des Femmes",
+                    "name": "Unité  Administrative des Femmes",
                     "beds": null
                 },
                 {
-                    "name": "Unité de Réhabilitation des Patients",
+                    "name": "Réhabilitation des Patients",
                     "beds": null
                 },
                 {

@@ -9,17 +9,17 @@ export const NavBar = () => {
   const [menuOpened, setMenuOpened] = useState(false)
   return (
     <div className="primary-container">
-      <div className="logo">EHS Frantz Fanon</div>
+      <Link to={"/"} className="logo">EHS Frantz Fanon</Link>
       <div className="navbar-toggle" onClick={()=>setMenuOpened(!menuOpened)}>
         <Menu height={48} width={48} color='#1E3E58' />
       </div>
       <div className={menuOpened ? "navbar-container opened" : "navbar-container"}>
         <ul className="navbar">
-          <li><NavLink to={"/"}>Accueil</NavLink></li>
-          <li><NavLink to={"/a-propos"}>A propos</NavLink></li>
-          <li><NavLink to={"/services"}>Services</NavLink></li>
+          <li><NavLink onClick={()=>setMenuOpened(false)} to={"/"}>Accueil</NavLink></li>
+          <li><NavLink onClick={()=>setMenuOpened(false)} to={"/a-propos"}>A propos</NavLink></li>
+          <li><NavLink onClick={()=>setMenuOpened(false)} to={"/services"}>Services</NavLink></li>
         </ul>
-        <Link to={"/contactez-nous"} style={{ textDecoration: "none" }}>
+        <Link onClick={()=>setMenuOpened(false)} to={"/contactez-nous"} style={{ textDecoration: "none" }}>
           <div className="navbar-contact-button-container">
             Contactez Nous
           </div>

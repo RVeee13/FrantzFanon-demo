@@ -41,6 +41,29 @@ export const Home = () => {
       return () => window.removeEventListener('load', onPageLoad);
     }
   }, []);
+  
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
+
+  const questions = [
+    {
+        question: "L'hôpital offre-t-il des services d'urgence psychiatrique?",
+        response: "Oui, 24h/24 et 7j/7."
+    },
+    {
+        question: "Quelles sont les services offerts ?",
+        response: "L'hôpital offre une gamme complète de services médicaux et psychiatriques, y compris des consultations, des thérapies individuelles et de groupe, des programmes de réadaptation et des traitements spécialisés."
+    },
+    {
+        question: "L'hôpital propose-t-il des programmes de réhabilitation?",
+        response: "Oui, plusieurs programmes disponibles."
+    },
+    {
+        question: "Comment contacter l'hôpital?",
+        response: "Par téléphone ou par email."
+    },
+  ]
 
   return (
 
@@ -112,7 +135,7 @@ export const Home = () => {
                 
                 </div>
               {/* <Reveal delay={.3}> */}
-                  <Link style={{ textDecoration: "none" }}>
+                  <Link to={"/services"} style={{ textDecoration: "none" }}>
                       <div className="more-button-container more-services-button-container">
                           En Savoir plus
                       </div>
@@ -210,14 +233,14 @@ export const Home = () => {
                 </div>
             </Reveal2>
                   <Reveal delay={.2}>
-                      <div className="phone-number-button-container">
+                      <a href='tel:+21325209046' className="phone-number-button-container">
                         <div className='phone-icon-container'>
                          <PhoneCall color='#fff' className='phone-icon'/>
                         </div>
                         <div className='phone-number'>
                             025 20 90 46
                         </div>
-                      </div>
+                      </a>
                   </Reveal>
         </div>
 
@@ -231,46 +254,10 @@ export const Home = () => {
                 </Reveal2>
             </div>
             <div className="question-cards-container">
-                <Reveal>
-                    <div className="question-card-container">
-                        <div className="question-container">L'hôpital offre-t-il des services d'urgence psychiatrique? </div>
-                        <div className="answer-container">
-                            <p className="answer">
-                            Oui, 24h/24 et 7j/7.
-                            </p>
-                        </div>
-                    </div>
-                </Reveal>
-                <Reveal>
-                    <div className="question-card-container">
-                        <div className="question-container">Quelles sont les services offerts ? </div>
-                        <div className="answer-container">
-                            <p className="answer">
-                            L'hôpital offre une gamme complète de services médicaux et psychiatriques, y compris des consultations, des thérapies individuelles et de groupe, des programmes de réadaptation et des traitements spécialisés.
-                            </p>
-                        </div>
-                    </div>
-                </Reveal>
-                <Reveal>
-                    <div className="question-card-container">
-                        <div className="question-container">L'hôpital propose-t-il des programmes de réhabilitation?</div>
-                        <div className="answer-container">
-                            <p className="answer">
-                            Oui, plusieurs programmes disponibles.
-                            </p>
-                        </div>
-                    </div>
-                </Reveal>
-                <Reveal>
-                    <div className="question-card-container">
-                        <div className="question-container">Comment contacter l'hôpital?</div>
-                        <div className="answer-container">
-                            <p className="answer">
-                            Par téléphoneou par email.
-                            </p>
-                        </div>
-                    </div>
-                </Reveal>
+                {questions.map((question, index)=>(
+                    <Question question={question} key={index}/>
+
+                ))}
             </div>
 
               <div className="faq-section-secondary-header-container">
@@ -291,4 +278,20 @@ export const Home = () => {
           <Footer />
       </div>
   )
+}
+
+
+const Question = ({question})=>{
+    return(
+                <Reveal>
+                    <div className="question-card-container">
+                        <div className="question-container">{question.question}</div>
+                        <div className="answer-container">
+                            <p className="answer">
+                                {question.response}
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+    )
 }
