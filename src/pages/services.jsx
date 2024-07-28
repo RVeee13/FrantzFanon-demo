@@ -146,6 +146,10 @@ export const Services = () => {
         }
     ]
     const [loading, setLoading] = useState(true);
+    
+     useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     useEffect(() => {
     // callback function to call when event triggers
